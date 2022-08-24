@@ -7,8 +7,8 @@ import '../styles/layout.css';
 export const Layout = () => {
 
   return (
-      <div className="container">
-        <Header/>
+      <div className="container" style={{position: 'relative'}}>
+        <Header title="Home"/>
         <MainPage/>
         <CardsContainer/>    
       </div>

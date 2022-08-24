@@ -1,8 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './components/layout';
-import {useState} from 'react';
 import JobList from './components/JobList';
-
+import ShowMap from './components/showMap';
 
 function App() {
 
@@ -12,8 +11,11 @@ function App() {
           <Route path='/' element={<Layout/>}>
           </Route>
           <Route path='/jobList' element={<JobList/>}>
-
           </Route>
+          <Route path='/showMap' element={<ShowMap/>}>
+            </Route>
+            <Route path='/showtestmap' element={<ShowMap/>}>
+            </Route>
         </Routes>
 
     </div>

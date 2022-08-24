@@ -1,11 +1,16 @@
 import logo from '../components/logo.jpg';
 
-const Header =()=>{
+const Header =({title})=>{
     return (
 <header>
 <div className="Logo">
-    <img src={logo} width="75rm" alt="Logo for Work Freelance"/>
+    <a href="/" className="navbutton">
+        <span>
+   <img src={logo} width="100rm" alt="Logo for Work Freelance" className='rounded-circle'/>
+        </span>
+    </a>
 </div>
+<h3>{title}</h3>
 <div>
 <div>
     <nav>
@@ -19,7 +24,7 @@ const Header =()=>{
 <nav>
     <a href="/Register.html" className="navbutton">Register</a>
     <a href="/person.html" className="navbutton">About</a>
-    <a href="#" className="navbutton">Conact</a>
+    <a href="#" className="navbutton">Contact us</a>
 </nav>
 </div>
 </header>

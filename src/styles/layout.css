@@ -16,6 +16,7 @@ a {
 
 .Logo{
     height: 70px;
+    z-index: 90;
 }
 
 .container {
@@ -41,6 +42,9 @@ main {
     align-items: center;
 }
 
+#skillList{
+    height: 550px;
+}
 .cards {
     display: flex;
     justify-content: space-between;
@@ -157,4 +161,13 @@ nav a.mybutton {
   'opsz' 48
 }
 
+#popover-basic{
+    color:rgb(38, 27, 69)
+}
 
+.myMap{
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 0;
+  }
